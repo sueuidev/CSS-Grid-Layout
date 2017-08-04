@@ -10,7 +10,11 @@
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1em;
         /*grid-auto-rows: 100px;*/
-        grid-auto-rows: minmax(100px, auto); /* default is 100px but will strech if content is bigger to fit */
+        grid-auto-rows: minmax(100px, auto); /* flexible height */
+        /* default is 100px but will strech if content is bigger to fit */
+      }
+      .nested {
+        display: gird;
       }
       .wrapper > div {
         background: #eee;
@@ -29,8 +33,10 @@
       <div>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </div>
-      <div>
-        Lorem ipsum dolor sit amet
+      <div class="nested">
+        <div>Lorem</div>
+        <div>Lorem</div>
+        <div>Lorem</div>
       </div>
       <div>
         Lorem ipsum dolor sit amet
