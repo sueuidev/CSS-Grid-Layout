@@ -6,4 +6,5 @@ grid-gap
 SAME AS FOLLOW TWO LINES
   grid-column-gap: 1em; separating columns
   grid-row-gap: 1em; separating rows
- 
+
+grid-auto-rows: minmax
