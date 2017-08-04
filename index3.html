@@ -15,9 +15,16 @@
         justify-items: strech;
         align-items: stretch; /* can be start, end, center */
       }
-      .box1 { align-self: start; }
-      .box2 { align-self: end; }
-      .box3 { justify-self: end; }
+      .box1 {
+        /*align-self: start; */
+        grid-column: 1/3;
+      }
+      .box2 {
+        /*align-self: end; */
+      }
+      .box3 {
+        /*justify-self: end; */
+      }
       .wrapper > div {
         background: #eee;
         padding: 1em;
