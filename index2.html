@@ -2,9 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>CSS Grids</title>
+    <title>CSS Grids - Part 2</title>
     <style media="screen">
       .wrapper {
+        display: grid;
+        /* grid-template-columns: 1fr 2fr 1fr;*/ /* fraction - fr is recommended over % or px */
+        grid-template-columns: repeat(4, 1fr 2fr);
+        grid-gap: 1em;
       }
       .wrapper > div {
         background: #eee;
